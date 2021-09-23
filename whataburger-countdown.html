@@ -1,0 +1,509 @@
+<link rel="stylesheet" href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt557900001399373b/aso-v-main.css" />
+<script src="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt2b858e9664a7f06d/rellax-vic.js"></script>
+<style>
+  body {
+    background: rgb(242, 103, 31);
+    background: linear-gradient(90deg, rgba(242, 103, 31, 1) 0%, rgba(249, 161, 56, 1) 50%, rgba(242, 103, 31, 1) 100%);
+  }
+
+  .container-960 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    position: relative;
+  }
+
+  .bg-white {
+    background: white;
+  }
+
+  .mxw-75-90 {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .fz-20-16 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hero-section-whtbgr {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .headline-section-whtbgr {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .buildings-section-whtbgr {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .pack-section {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  .whtbgr-white-hr {
+    border-bottom: 2px solid white;
+    z-index: -100;
+    position: relative;
+  }
+
+  .whtbgr-hero-bg {
+    background-image: url(https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt9c7ff3146e3f28dc/6102345168cfd67d27c4342f/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  .whtbgr-hero-bg-size {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .jalapeno {
+    position: absolute;
+    top: 1vw;
+    left: -2vw;
+  }
+
+  .cup {
+    position: absolute;
+    top: 13vw;
+    right: -200px;
+  }
+
+  .lure {
+    position: absolute;
+    top: 25vw;
+    left: 35vw;
+  }
+
+  .fishing {
+    position: absolute;
+    top: -17vw;
+    left: -14vw;
+  }
+
+  .tray {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+  }
+
+  .z-in10 {
+    z-index: -100;
+  }
+
+  /* float images all display sizes */
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+
+    50% {
+      transform: translatey(-20px);
+    }
+
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  .avatar {
+    overflow: hidden;
+    animation: float 7s ease-in-out infinite;
+  }
+
+  .special {
+    overflow: hidden;
+    animation: float 9s ease-in-out infinite;
+  }
+
+  .third {
+    overflow: hidden;
+    animation: float 8s ease-in-out infinite;
+    transform: rotate(20deg);
+  }
+
+  .style-headline {
+    width: 50%;
+  }
+
+  /* countdown */
+  .color-orange {
+    color: #ed5b00;
+  }
+
+  .pt-md-8 {
+    padding-top: 4.5em;
+  }
+
+  .fz-10-7-4 {
+    font-size: 7em;
+    line-height: 0.75em;
+  }
+
+  .h-100 {
+    height: 100%;
+  }
+
+  /* vic */
+  div#hrs {
+    padding-right: 1rem;
+  }
+
+  .d-flex.flex-column.justify-content-center.align-items-center {
+    padding-top: 4rem;
+  }
+
+  .py-what-special {
+    padding-top: 3.5rem;
+    padding-bottom: 2.5;
+  }
+
+  /* end vic */
+  /* end countdown */
+
+  /* xl displays */
+  @media (min-width: 1800px) {
+    .cup {
+      position: absolute;
+      top: 10vw;
+      right: -200px;
+    }
+
+    .lure {
+      position: absolute;
+      top: 20vw;
+      left: 20vw;
+    }
+  }
+
+  /* this media query is only for the countdown */
+  @media (max-width: 1000px) {
+    .fz-10-7-4 {
+      font-size: 7em;
+      line-height: 1em;
+    }
+  }
+
+  /* end this media query is only for the countdown */
+
+  /* tablets no ipad pro */
+  @media (min-width: 1025px) and (max-width: 1800px) {
+    .cup {
+      position: absolute;
+      top: 19vw;
+      right: 0vw;
+    }
+
+    .fz-10-7-4 {
+      font-size: 4.5em;
+      line-height: 0.75em;
+    }
+  }
+
+  /* tablets no ipad pro */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .whtbgr-hero-bg {
+      background-image: url(https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb33cfb5a76626c6/61023452f46ba27d21796197/hero-image-tablet.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    .whtbgr-hero-bg-size {
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+    }
+
+    .fishing {
+      display: none;
+    }
+
+    .cup {
+      position: absolute;
+      top: 30vw;
+      left: 80vw;
+      width: 150px;
+    }
+
+    .jalapeno {
+      display: none;
+    }
+
+    .tray {
+      display: none;
+    }
+
+    .lure {
+      position: absolute;
+      top: 30vw;
+      left: 40vw;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 768px) {
+    .mxw-75-90 {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .fz-20-16 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .whtbgr-hero-bg {
+      background-image: url(https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt7084ed321154bc05/6103010c60e48e11c9691039/hero-content-m.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .whtbgr-hero-bg-size {
+      padding-top: 58vw;
+      padding-bottom: 58vw;
+    }
+
+    .jalapeno {
+      position: absolute;
+      top: 2vw;
+      left: 1vw;
+      width: 70px;
+    }
+
+    .cup {
+      position: absolute;
+      top: 59vw;
+      left: -6vw;
+      width: 150px;
+    }
+
+    .lure {
+      position: absolute;
+      top: 20vw;
+      left: 67vw;
+    }
+
+    .buildings-section-whtbgr {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+
+    .pack-section {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+
+    .headline-section-whtbgr {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .style-headline {
+      width: 100%;
+    }
+
+    /* countdown */
+    .fz-10-7-4 {
+      font-size: 2.5em;
+      line-height: .75em;
+    }
+
+    .d-flex.flex-column.justify-content-center.align-items-center {
+      padding-top: 2rem;
+    }
+
+    div#hrs {
+      padding-right: 0;
+    }
+
+    .py-what-special {
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+    }
+
+    /* end countdown */
+  }
+
+</style>
+
+
+<div class="whtbgr-white-hr">
+  <div class="container-1280 z-in10 py-3 py-md-6">
+    <div class="row">
+      <div class="col-12">
+        <div class="whtbgr-hero-bg whtbgr-hero-bg-size rellax" data-rellax-speed="1">
+          <div>
+            <img class="jalapeno rellax" data-rellax-speed="-2" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt8eb3cc6d63b3a219/6102345160e48e11c9690edf/jalapeno-sticker.png" alt="">
+            <img class="cup rellax" data-rellax-speed="2" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltb35e71d75888c8a1/610234150694a47e9461317f/cup-left-angle.png" alt="">
+            <img class="lure rellax" data-rellax-speed="1" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltb6e8742343d73c94/6102345280ce947e9b4fd65e/lure-left.png" alt="">
+            <img class="fishing nomobile rellax" data-rellax-speed="6" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc58dbc5cfa959b26/61023415f46ba27d2179618f/fishing-combo-right.png" alt="">
+            <img class="tray nomobile rellax" data-rellax-speed="-2" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc0e0e814194c3994/6102345294a85a104e7e6d11/tray.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- whataburger countdown -->
+<div class="py-what-special">
+  <div class="container-960 mb-1" id="hpRowOne">
+    <div class="row">
+      <div class="col-12 no-gutters-m">
+        <picture>
+          <source type="image/jpeg" srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blted6d911f4ab7ca29/611424d5ede63514c3a33689/tents.png 1x,
+          https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blted6d911f4ab7ca29/611424d5ede63514c3a33689/tents.png 2x" media="(min-width: 768px)" />
+          <img type="image/jpeg" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blted6d911f4ab7ca29/611424d5ede63514c3a33689/tents.png"
+            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blted6d911f4ab7ca29/611424d5ede63514c3a33689/tents.png 2x"
+            alt="whataburger countdown" class="d-block w-100" />
+        </picture>
+      </div>
+
+      <div class="position-absolute col-12 col-md-12 h-100 d-flex justify-content-center align-items-center align-items-md-center">
+        <div class="col-4 col-md-4 d-block pr-3 pr-md-3">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="hrs" class="color-orange fz-10-7-4 fw-700 setW"></div>
+            <div class="color-orange fz-20-14 setW px-quarter px-md-half py-quarter">HRS</div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 d-block">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="mnts" class="color-orange fz-10-7-4 fw-700 setW"></div>
+            <div class="color-orange fz-20-14 setW px-md-quarter py-quarter">MIN</div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 d-block pl-3 pl-md-3">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div id="sec" class="color-orange fz-10-7-4 fw-700 setW"></div>
+            <div class="color-orange fz-20-14 setW px-md-quarter py-quarter">SEC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-1280 pt-3 py-md-6">
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center">
+        <img class="style-headline" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt5e94f55ef5a859f5/610ab9583141be6f864190b7/styles.png" alt="">
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <div class="avatar nomobile">
+          <img class="w-100 d-block" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blted4b83247094793c/610aaf7263c3aa6f80749b82/one.png" />
+        </div>
+        <div class="special nomobile">
+          <img class="w-100 d-block" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltd8799fac70c7a72d/610aaf72329c4d740189f6fa/three.png" />
+        </div>
+        <div class="third nomobile">
+          <img class="w-100 d-block" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt85d8e9b670d2bb0c/610aaf723141be6f864190a7/two.png" />
+        </div>
+        <div class="third nodesktop">
+          <img class="w-100 d-block" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt513d86658c8b4632/610ac831329c4d740189f73a/prod-m.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-1280">
+  <div class="row">
+    <div class="col-12">
+      <div class="headline-section-whtbgr">
+        <picture>
+          <source type="image/jpeg" srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdbc247f620ba683a/6102342d94a85a104e7e6d0d/headline-one.png 1x,
+                https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt6a1308d4fe4cf991/6102342dc3fd5f11caccd17d/headline-one@2x.png 2x" media="(min-width: 768px)" />
+          <img loading="lazy" type="image/jpeg" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte6b06db00ba778a5/6102342d60e48e11c9690ed7/headline-one-m.png"
+            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltca12866d26249057/6102342dada5421054adc71c/headline-one-m@2x.png 2x" alt="clearance" class="d-block w-100" />
+        </picture>
+      </div>
+      <div class="buildings-section-whtbgr">
+        <picture>
+          <source type="image/jpeg" srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltde941387874e5d11/610428d60694a47e9461345d/buildings.png 1x,
+              https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltd169e79707b1b86e/610428d6f46ba27d21796482/buildings@2x.png 2x" media="(min-width: 768px)" />
+          <img loading="lazy" type="image/jpeg" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltd27d7b336b880e6a/610428d6c3fd5f11caccd444/buildings-m.png"
+            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blta945ba9466f78838/610428d668cfd67d27c43752/buildings-m@2x.png 2x" alt="clearance" class="d-block w-100" />
+        </picture>
+        <div class="text-center mxw-75-90 color-white fz-20-16 pt-3">Combining two Texas staples, this exclusive outdoor lifestyle apparel is cooking with unmistakable style and Lone Star tradition. </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-1280 pt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="headline-section-whtbgr">
+        <picture>
+          <source type="image/jpeg" srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt84392be5ce09d928/6102342d68cfd67d27c4342b/headline-two.png 1x,
+              https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt68711f82249da6dd/6102342d80ce947e9b4fd65a/headline-two@2x.png 2x" media="(min-width: 768px)" />
+          <img loading="lazy" type="image/jpeg" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt5d6a9a38b8720f66/6102342d0694a47e94613183/headline-two-m.png"
+            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt847fff88b1c1c326/6102342d60e48e11c9690edb/headline-two-m@2x.png 2x" alt="clearance" class="d-block w-100" />
+        </picture>
+      </div>
+      <div class="pack-section">
+        <picture>
+          <source type="image/jpeg" srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte8ec8f91568ad650/610234520694a47e94613187/pack.png 1x,
+              https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt6d16a0a24f939aee/6102345280ce947e9b4fd662/pack@2x.png 2x" media="(min-width: 768px)" />
+          <img loading="lazy" type="image/jpeg" src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt259d76113d466c91/61023452c3fd5f11caccd181/pack-m.png"
+            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt1684b9116e65eccd/6102345260e48e11c9690ee3/pack-m@2x.png 2x" alt="clearance" class="d-block w-100" />
+        </picture>
+        <div class="text-center mxw-75-90 color-white fz-24 pt-3">
+          Enter to Win<br />
+          <span class="color-black fw-700">FREE</span> <span class="fw-700">Whataburger for a Year</span><br />
+          and a <span class="fw-700">$500 Academy gift card</span><br />
+          + more with our prize pack.
+        </div>
+        <div class="py-quarter text-center">
+          <a class="color-white fz-12 text-underline" href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt19f987fffe61cc0e/6104611261f38746a577b1ca/magellan-outdoors-whataburger-sweepstakes.pdf" target="_blank">Click here to view Official Rules</a>
+        </div>
+        <div class="pt-3 text-center" id="whtbgr-form">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var rellax = new Rellax('.rellax');
+</script>
+
+<script>
+  var countDownDate = new Date("August 16, 2021 08:00:00").getTime();
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    let formHours = ("0" + hours).slice(-2);
+    let formMin = ("0" + minutes).slice(-2);
+    let formSec = ("0" + seconds).slice(-2);
+    document.getElementById("hrs").innerHTML = formHours;
+    document.getElementById("mnts").innerHTML = formMin;
+    document.getElementById("sec").innerHTML = formSec;
+    if (distance < 0) {
+      clearInterval(x);
+    }
+  }, 1000);
+</script>
